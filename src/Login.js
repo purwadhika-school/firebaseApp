@@ -32,7 +32,7 @@ class Login extends Component {
 
   render() {
     return (
-      <View>
+      <View style={{ flex: 1 }}>
         <TextInput
           placeholder="email"
           onChangeText={txt => this.setState({ email: txt })}
@@ -46,7 +46,7 @@ class Login extends Component {
             this.handleLogin();
           }}
         >
-          <Text>Submit</Text>
+          <Text>Login</Text>
         </TouchableOpacity>
       </View>
     );
